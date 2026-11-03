@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sih26037-backend
+    env: python
+    plan: starter
+    region: oregon
+    healthCheckPath: /api/health
+    buildCommand: pip install -r requirements.txt -r requirements-webrtc.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SIH_HOST
+        value: 0.0.0.0
+      - key: SIH_USE_HTTPS
+        value: "0"

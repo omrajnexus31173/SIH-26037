@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-11-03T07:02:31.991729+00:00",
+  "backend": "http://127.0.0.1:8000",
+  "frontend": "http://127.0.0.1:4173",
+  "passed": 18,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "backend_health",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "project": "SIH-26037"
+      }
+    },
+    {
+      "name": "dashboard_html",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "has_root": true
+      }
+    },
+    {
+      "name": "frontend_api_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "project": "SIH-26037"
+      }
+    },
+    {
+      "name": "reachable_pairing_url",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "pair_url": "http://127.0.0.1:4173/pair?token=eJYS67unNJ536ZbY6a1XKzLsdf4Ooo_f",
+        "token_in_url": true
+      }
+    },
+    {
+      "name": "pair_spa_route",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "has_root": true
+      }
+    },
+    {
+      "name": "qr_png_via_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "content_type": "image/png",
+        "bytes": 1884
+      }
+    },
+    {
+      "name": "pairing_validate_via_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "body": {
+          "valid": true,
+          "expires_in_s": 899,
+          "reason": "",
+          "secure_context": false,
+          "https_note": "Browser camera access requires HTTPS on a LAN IP (or localhost). Trust the self-signed certificate or open the dashboard over an HTTPS tunnel."
+        }
+      }
+    },
+    {
+      "name": "simulation_control",
+      "ok": true,
+      "detail": {
+        "scenario_status": 200,
+        "control_status": 200,
+        "scenario_id": "highway_cruising",
+        "simulation_status": "running"
+      }
+    },
+    {
+      "name": "authoritative_simulation_state_via_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "scenario_id": "highway_cruising",
+        "grid_shape": [
+          257,
+          41
+        ]
+      }
+    },
+    {
+      "name": "synthetic_camera_frames",
+      "ok": true,
+      "detail": {
+        "select_status": 200,
+        "source_type": "synthetic",
+        "frames_received": 3,
+        "fps": 18.76
+      }
+    },
+    {
+      "name": "mjpeg_snapshot_via_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 13246,
+        "jpeg_magic": true
+      }
+    },
+    {
+      "name": "telemetry_websocket_backend",
+      "ok": true,
+      "detail": {
+        "initial_type": "telemetry",
+        "pong": true,
+        "has_simulation": true
+      }
+    },
+    {
+      "name": "telemetry_websocket_via_frontend_proxy",
+      "ok": true,
+      "detail": {
+        "initial_type": "telemetry",
+        "pong": true,
+        "has_simulation": true
+      }
+    },
+    {
+      "name": "phone_websocket_via_frontend_proxy",
+      "ok": true,
+      "detail": {
+        "paired": "paired",
+        "hello": "hello_ack",
+        "frame_ack": "frame_ack",
+        "frames_received": 1,
+        "disconnect": "disconnected"
+      }
+    },
+    {
+      "name": "webrtc_invalid_offer_via_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "error": "A complete SDP offer is required"
+      }
+    },
+    {
+      "name": "evaluation_markdown_via_proxy",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 2241,
+        "content_disposition": "attachment; filename=\"sih26037_evaluation_20261103_070229.md\""
+      }
+    },
+    {
+      "name": "measured_comparison_post",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "scenario_count": 2,
+        "total_collisions": 0
+      }
+    },
+    {
+      "name": "restore_demo_video_source",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "source_type": "video"
+      }
+    }
+  ],
+  "note": "Live process integration against real uvicorn and Vite servers. Hardware camera, Android phone, HTTPS trust and valid WebRTC SDP/ICE media are not exercised here."
+}

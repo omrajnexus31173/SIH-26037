@@ -1,0 +1,4 @@
+# Optional low-latency WebRTC receiver. If this install fails on a particular
+# Windows/Python combination, the authenticated MJPEG WebSocket fallback and
+# all other features remain fully functional.
+aiortc>=1.9,<2.0

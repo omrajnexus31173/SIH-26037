@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-11-02T19:07:39.100+00:00",
+  "scenario": "highway_cruising",
+  "run_started_at": "2026-11-02T19:07:38.899+00:00",
+  "elapsed_s": 0.2,
+  "collision_count": 0,
+  "collision_avoidance_success_rate": null,
+  "obstacle_encounters": 0,
+  "obstacle_avoidance_success": null,
+  "path_length_m": 0.04,
+  "path_smoothness_rad": 0.01255,
+  "replanning_count": 2,
+  "replanning_latency_ms_mean": 72.38,
+  "replanning_latency_ms_max": 81.3,
+  "completion_rate": 0.0,
+  "completed": false,
+  "emergency_stops": 0,
+  "average_speed_mps": 0.188,
+  "fps_mean": 20.0,
+  "fps_current": 20.0,
+  "runs_started": 2,
+  "history": [
+    {
+      "t": 0.05,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.01,
+      "fps": 20.0
+    },
+    {
+      "t": 0.1,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.02,
+      "fps": 20.0
+    },
+    {
+      "t": 0.05,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.01,
+      "fps": 20.0
+    },
+    {
+      "t": 0.1,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.02,
+      "fps": 20.0
+    },
+    {
+      "t": 0.15,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.03,
+      "fps": 20.0
+    },
+    {
+      "t": 0.2,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.04,
+      "fps": 20.0
+    }
+  ],
+  "events": [
+    {
+      "t": 0.0,
+      "type": "reset",
+      "scenario": "unmarked_village"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 28.62,
+      "reason": "reset"
+    },
+    {
+      "t": 0.0,
+      "type": "reset",
+      "scenario": "highway_cruising"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 63.46,
+      "reason": "reset"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 81.3,
+      "reason": "blocked_route_retry"
+    }
+  ],
+  "note": "Values are measured from actual simulation events. null means no sample was recorded."
+}

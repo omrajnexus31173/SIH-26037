@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-11-02T14:24:49.848+00:00",
+  "scenario": "pedestrian_crossing",
+  "run_started_at": "2026-11-02T14:24:49.803+00:00",
+  "elapsed_s": 0.05,
+  "collision_count": 0,
+  "collision_avoidance_success_rate": null,
+  "obstacle_encounters": 0,
+  "obstacle_avoidance_success": null,
+  "path_length_m": 0.01,
+  "path_smoothness_rad": 0.0,
+  "replanning_count": 1,
+  "replanning_latency_ms_mean": 37.95,
+  "replanning_latency_ms_max": 37.95,
+  "completion_rate": 0.0,
+  "completed": false,
+  "emergency_stops": 0,
+  "average_speed_mps": 0.125,
+  "fps_mean": 20.0,
+  "fps_current": 20.0,
+  "runs_started": 2,
+  "history": [
+    {
+      "t": 0.05,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.01,
+      "fps": 20.0
+    },
+    {
+      "t": 0.1,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.02,
+      "fps": 20.0
+    },
+    {
+      "t": 0.15,
+      "speed": 0.375,
+      "risk": 0.0,
+      "distance": 0.04,
+      "fps": 20.0
+    },
+    {
+      "t": 0.2,
+      "speed": 0.5,
+      "risk": 0.0,
+      "distance": 0.06,
+      "fps": 20.0
+    },
+    {
+      "t": 0.25,
+      "speed": 0.625,
+      "risk": 0.0,
+      "distance": 0.09,
+      "fps": 20.0
+    },
+    {
+      "t": 0.3,
+      "speed": 0.75,
+      "risk": 0.0,
+      "distance": 0.13,
+      "fps": 20.0
+    },
+    {
+      "t": 0.35,
+      "speed": 0.875,
+      "risk": 0.0,
+      "distance": 0.18,
+      "fps": 20.0
+    },
+    {
+      "t": 0.4,
+      "speed": 1.0,
+      "risk": 0.0,
+      "distance": 0.23,
+      "fps": 20.0
+    },
+    {
+      "t": 0.45,
+      "speed": 1.125,
+      "risk": 0.0,
+      "distance": 0.28,
+      "fps": 20.0
+    },
+    {
+      "t": 0.5,
+      "speed": 1.25,
+      "risk": 0.0,
+      "distance": 0.34,
+      "fps": 20.0
+    },
+    {
+      "t": 0.55,
+      "speed": 1.375,
+      "risk": 0.0,
+      "distance": 0.41,
+      "fps": 20.0
+    },
+    {
+      "t": 0.6,
+      "speed": 1.5,
+      "risk": 0.0,
+      "distance": 0.49,
+      "fps": 20.0
+    },
+    {
+      "t": 0.65,
+      "speed": 1.625,
+      "risk": 0.0,
+      "distance": 0.57,
+      "fps": 20.0
+    },
+    {
+      "t": 0.7,
+      "speed": 1.75,
+      "risk": 0.0,
+      "distance": 0.66,
+      "fps": 20.0
+    },
+    {
+      "t": 0.75,
+      "speed": 1.875,
+      "risk": 0.0,
+      "distance": 0.75,
+      "fps": 20.0
+    },
+    {
+      "t": 0.8,
+      "speed": 2.0,
+      "risk": 0.0,
+      "distance": 0.85,
+      "fps": 20.0
+    },
+    {
+      "t": 0.85,
+      "speed": 2.125,
+      "risk": 0.0,
+      "distance": 0.96,
+      "fps": 20.0
+    },
+    {
+      "t": 0.9,
+      "speed": 2.25,
+      "risk": 0.0,
+      "distance": 1.07,
+      "fps": 20.0
+    },
+    {
+      "t": 0.95,
+      "speed": 2.375,
+      "risk": 0.0,
+      "distance": 1.19,
+      "fps": 20.0
+    },
+    {
+      "t": 1.0,
+      "speed": 2.5,
+      "risk": 0.0,
+      "distance": 1.31,
+      "fps": 20.0
+    },
+    {
+      "t": 1.05,
+      "speed": 2.625,
+      "risk": 0.0,
+      "distance": 1.44,
+      "fps": 20.0
+    },
+    {
+      "t": 1.1,
+      "speed": 2.75,
+      "risk": 0.0,
+      "distance": 1.58,
+      "fps": 20.0
+    },
+    {
+      "t": 1.15,
+      "speed": 2.875,
+      "risk": 0.0,
+      "distance": 1.73,
+      "fps": 20.0
+    },
+    {
+      "t": 1.2,
+      "speed": 3.0,
+      "risk": 0.0,
+      "distance": 1.88,
+      "fps": 20.0
+    },
+    {
+      "t": 1.25,
+      "speed": 3.125,
+      "risk": 0.017,
+      "distance": 2.03,
+      "fps": 20.0
+    },
+    {
+      "t": 1.3,
+      "speed": 3.25,
+      "risk": 0.044,
+      "distance": 2.19,
+      "fps": 20.0
+    },
+    {
+      "t": 0.05,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.01,
+      "fps": 20.0
+    }
+  ],
+  "events": [
+    {
+      "t": 0.0,
+      "type": "reset",
+      "scenario": "unmarked_village"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 31.06,
+      "reason": "reset"
+    },
+    {
+      "t": 0.3,
+      "type": "replan",
+      "latency_ms": 36.58,
+      "reason": "periodic_replan"
+    },
+    {
+      "t": 0.65,
+      "type": "replan",
+      "latency_ms": 49.27,
+      "reason": "periodic_replan"
+    },
+    {
+      "t": 1.0,
+      "type": "replan",
+      "latency_ms": 32.55,
+      "reason": "periodic_replan"
+    },
+    {
+      "t": 0.0,
+      "type": "reset",
+      "scenario": "pedestrian_crossing"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 37.95,
+      "reason": "reset"
+    }
+  ],
+  "note": "Values are measured from actual simulation events. null means no sample was recorded."
+}

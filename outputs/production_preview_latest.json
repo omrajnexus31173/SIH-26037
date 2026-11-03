@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-11-03T07:02:32.535715+00:00",
+  "backend": "http://127.0.0.1:8000",
+  "frontend_production_preview": "http://127.0.0.1:4173",
+  "passed": 20,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "production_index_html",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 1068
+      }
+    },
+    {
+      "name": "runtime_config_script_tag",
+      "ok": true,
+      "detail": {
+        "present": true
+      }
+    },
+    {
+      "name": "runtime_config_js",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "has_placeholder": false,
+        "has_manual_edit_notes": false
+      }
+    },
+    {
+      "name": "hashed_assets_declared",
+      "ok": true,
+      "detail": {
+        "count": 6,
+        "assets": [
+          "/assets/index-hf-e134g.js",
+          "/assets/react-C822Eag7.js",
+          "/assets/icons-BIXlE-gB.js",
+          "/assets/three-BkeU--1U.js",
+          "/assets/charts-Rd1rkV6h.js",
+          "/assets/index-DkV2TVgA.css"
+        ]
+      }
+    },
+    {
+      "name": "asset_index-hf-e134g.js",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 149755
+      }
+    },
+    {
+      "name": "asset_react-C822Eag7.js",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 146114
+      }
+    },
+    {
+      "name": "asset_icons-BIXlE-gB.js",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 28182
+      }
+    },
+    {
+      "name": "asset_three-BkeU--1U.js",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 849111
+      }
+    },
+    {
+      "name": "asset_charts-Rd1rkV6h.js",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 383963
+      }
+    },
+    {
+      "name": "asset_index-DkV2TVgA.css",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 26827
+      }
+    },
+    {
+      "name": "config_warning_in_compiled_bundle",
+      "ok": true,
+      "detail": {
+        "present": true
+      }
+    },
+    {
+      "name": "network_error_handling_in_compiled_bundle",
+      "ok": true,
+      "detail": {
+        "present": true
+      }
+    },
+    {
+      "name": "no_hardcoded_local_backend_in_bundle",
+      "ok": true,
+      "detail": {
+        "present": false
+      }
+    },
+    {
+      "name": "static_favicon_svg",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 523
+      }
+    },
+    {
+      "name": "static_manifest_webmanifest",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 403
+      }
+    },
+    {
+      "name": "spa_pair_route_refresh",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "has_root": true
+      }
+    },
+    {
+      "name": "rest_api_via_production_preview",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "project": "SIH-26037"
+      }
+    },
+    {
+      "name": "synthetic_camera_fallback",
+      "ok": true,
+      "detail": {
+        "select_status": 200,
+        "source_type": "synthetic",
+        "frames_received": 1,
+        "connected": true
+      }
+    },
+    {
+      "name": "jpeg_snapshot_via_production_preview",
+      "ok": true,
+      "detail": {
+        "status_code": 200,
+        "bytes": 13246
+      }
+    },
+    {
+      "name": "telemetry_websocket_via_production_preview",
+      "ok": true,
+      "detail": {
+        "initial_type": "telemetry",
+        "pong": true,
+        "has_simulation": true
+      }
+    }
+  ],
+  "note": "Production Vite preview and real uvicorn backend; no browser DOM/console automation or physical hardware was available."
+}

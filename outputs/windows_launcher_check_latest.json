@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-02T19:09:29.264383+00:00",
+  "workspace": "/home/user/sih-26037",
+  "static_check_passed": true,
+  "parser": "Wine cmd.exe (not Windows 10 cmd.exe)",
+  "windows_10_executed": false,
+  "status": "PASS",
+  "wine_prefix": "/home/user/.wineprefix_probe",
+  "wine_prefix_reused": false,
+  "wine_binary": "/usr/lib/wine/wine64",
+  "probes": [
+    {
+      "script": "setup_windows_probe.bat",
+      "expected_marker": "SETUP COMPLETE",
+      "marker_found": true,
+      "returncode": 0,
+      "parse_errors": [],
+      "fail_markers": [],
+      "passed": true,
+      "output_tail": "============================================================\n SIH-26037 - Windows setup\n Adaptive Path Planning and Collision Avoidance\n============================================================\n\n[OK] Python 3.13.17 \n[OK] Node v20.20.2 \n[OK] npm 10.8.2 \n\n[1/8] Creating Python virtual environment...\n[OK] Virtual environment ready.\n\n[2/8] Installing core Python dependencies - CPU-only...\n[OK] Core Python dependencies installed.\n\n[3/8] Installing optional WebRTC receiver - aiortc...\n[OK] WebRTC receiver installed.\n\n[4/8] Creating configuration...\n[OK] Created .env from .env.example.\n\n[5/8] Installing frontend dependencies...\n[OK] Frontend dependencies installed.\n\n[6/8] Generating self-signed HTTPS certificate for phone camera access...\n\n[7/8] Verifying bundled AI models and demo clip...\n[OK] YOLOv8n ONNX and TwinLiteNet ONNX verified.\n\n[8/8] Compiling backend...\n[OK] Backend compiles.\n\n============================================================\n SETUP COMPLETE\n============================================================\nRun: start_project.bat\n\nFor phone camera over Wi-Fi:\n  1. Set SIH_USE_HTTPS=1 in .env\n  2. Trust certs\\sih-26037.crt on the phone\n  3. Start the project and choose the https://LAN_IP dashboard URL in Camera Connection\n\nUSB note: ordinary Android MTP file transfer is NOT a camera stream.\nUse a UVC-capable camera or ADB reverse + IP Webcam as documented in docs\\USB_CAMERA_SETUP.md.\n\nPAUSE_SKIPPED\n\nwine: failed to open L\"C:\\\\windows\\\\syswow64\\\\rundll32.exe\": c0000135\n"
+    },
+    {
+      "script": "start_project_probe.bat",
+      "expected_marker": "Keep both command windows open.",
+      "marker_found": true,
+      "returncode": 0,
+      "parse_errors": [],
+      "fail_markers": [],
+      "passed": true,
+      "output_tail": "============================================================\n Starting SIH-26037\n============================================================\nBackend : http://127.0.0.1:8000\nDashboard: http://localhost:5173\n\nSTART_BACKEND_SKIPPED\nSTART_FRONTEND_SKIPPED\nWaiting for services to bind...\nTIMEOUT_SKIPPED\n[WARN] curl.exe not found; skipping health check.\nOpening dashboard...\nOPEN_DASHBOARD_SKIPPED\n\nKeep both command windows open. Use stop_project.bat to close them.\nIf HTTPS is enabled, accept/trust the self-signed certificate in the browser and on the phone.\n\nInvalid parameter.\n\nInvalid parameter.\n\nInvalid parameter.\n\n"
+    },
+    {
+      "script": "stop_project_probe.bat",
+      "expected_marker": "[OK] Project windows terminated.",
+      "marker_found": true,
+      "returncode": 0,
+      "parse_errors": [],
+      "fail_markers": [],
+      "passed": true,
+      "output_tail": "Stopping SIH-26037 backend and frontend windows...\nChecking project ports 8000 and 5173...\nIf another application owns one of these ports, close it manually rather than killing it here.\n\n[OK] Project windows terminated. Phone/WebRTC sessions are revoked by the backend shutdown.\nIf a browser tab still shows a stale stream, refresh it after restarting start_project.bat.\nTIMEOUT_SKIPPED\n\nInvalid parameter.\n\nInvalid parameter.\n\nInvalid parameter.\n\n"
+    }
+  ]
+}

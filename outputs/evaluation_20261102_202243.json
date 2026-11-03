@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-11-02T20:22:43.725+00:00",
+  "scenario": "highway_cruising",
+  "run_started_at": "2026-11-02T20:22:43.397+00:00",
+  "elapsed_s": 0.25,
+  "collision_count": 0,
+  "collision_avoidance_success_rate": null,
+  "obstacle_encounters": 0,
+  "obstacle_avoidance_success": null,
+  "path_length_m": 0.06,
+  "path_smoothness_rad": 0.01255,
+  "replanning_count": 2,
+  "replanning_latency_ms_mean": 76.9,
+  "replanning_latency_ms_max": 93.62,
+  "completion_rate": 0.0,
+  "completed": false,
+  "emergency_stops": 0,
+  "average_speed_mps": 0.225,
+  "fps_mean": 20.0,
+  "fps_current": 20.0,
+  "runs_started": 2,
+  "history": [
+    {
+      "t": 0.05,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.01,
+      "fps": 20.0
+    },
+    {
+      "t": 0.1,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.02,
+      "fps": 20.0
+    },
+    {
+      "t": 0.15,
+      "speed": 0.375,
+      "risk": 0.0,
+      "distance": 0.04,
+      "fps": 20.0
+    },
+    {
+      "t": 0.05,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.01,
+      "fps": 20.0
+    },
+    {
+      "t": 0.1,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.02,
+      "fps": 20.0
+    },
+    {
+      "t": 0.15,
+      "speed": 0.125,
+      "risk": 0.0,
+      "distance": 0.03,
+      "fps": 20.0
+    },
+    {
+      "t": 0.2,
+      "speed": 0.25,
+      "risk": 0.0,
+      "distance": 0.04,
+      "fps": 20.0
+    },
+    {
+      "t": 0.25,
+      "speed": 0.375,
+      "risk": 0.0,
+      "distance": 0.06,
+      "fps": 20.0
+    }
+  ],
+  "events": [
+    {
+      "t": 0.0,
+      "type": "reset",
+      "scenario": "unmarked_village"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 37.71,
+      "reason": "reset"
+    },
+    {
+      "t": 0.0,
+      "type": "reset",
+      "scenario": "highway_cruising"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 60.18,
+      "reason": "reset"
+    },
+    {
+      "t": 0.0,
+      "type": "replan",
+      "latency_ms": 93.62,
+      "reason": "blocked_route_retry"
+    }
+  ],
+  "note": "Values are measured from actual simulation events. null means no sample was recorded."
+}

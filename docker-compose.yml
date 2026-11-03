@@ -1,0 +1,17 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sih26037-backend:latest
+    ports:
+      - "8000:8000"
+    environment:
+      SIH_HOST: 0.0.0.0
+      SIH_BACKEND_PORT: 8000
+      SIH_USE_HTTPS: "0"
+    volumes:
+      - ./outputs:/app/outputs
+      - ./uploads:/app/uploads
+      - ./config:/app/config
+    restart: unless-stopped
